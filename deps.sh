@@ -1,0 +1,1 @@
+paru -S xdg-user-dirs adw-gtk-theme adwaita-qt5 adwaita-qt6 qt5ct qt6ct hyprland hyprpaper waybar swaync rofi-wayland grim slurp polkit-gnome nautilus alacritty zsh ttf-jetbrains-mono-nerd brightnessctl wl-clipboard xclip nwg-look xdg-desktop-portal-gtk xdg-desktop-portal-hyprland oh-my-posh-bin hyprlock hypridle zoxide

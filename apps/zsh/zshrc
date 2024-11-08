@@ -1,0 +1,56 @@
+# ---------------
+#     Zinit
+# ---------------
+
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [ ! -d "$ZINIT_HOME" ]; then
+  mkdir -p "$(dirname $ZINIT_HOME)"
+  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+source "${ZINIT_HOME}/zinit.zsh"
+
+autoload -U compinit && compinit
+
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+source ~/.config/hypr/apps/zsh/oh-my-posh-zsh
+source ~/.config/hypr/apps/zsh/zoxide
+
+
+# ---------------
+#     History
+# ---------------
+
+HISTFILE=~/.zsh-history
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
+#bindkey "^[[A" history-search-backward
+#bindkey "^[[B" history-search-forward
+
+
+
+# ---------------
+#     Aliases
+# ---------------
+
+# Custom
+alias ls='ls --color=auto -F'
+alias grep='grep --color=auto'
+alias fastfetch='fastfetch --config ~/.config/hypr/apps/fastfetch.jsonc -l arch3'
+alias cd='z'
+
+# Utility
+alias l='ls -al'
+alias edit-hypr='nano ~/.config/hypr/hyprland.conf'
+alias flush-dns='sudo resolvectl flush-caches && sudo systemd-resolve --flush-caches && sudo systemctl restart NetworkManager'
+alias ..='cd ..'
+
+# Correction
+alias rclear="clear"
+alias clea="clear"
+alias clar="clear"
