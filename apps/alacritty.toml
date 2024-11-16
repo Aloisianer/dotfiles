@@ -14,21 +14,19 @@ blur = true
 normal.family = "JetBrainsMonoExtraBold Nerd Font Mono"
 size = 11
 
-# Catppuccin Mocha Theme
-
 [colors.primary]
-background = "#1e1e2e"
-foreground = "#cdd6f4"
-dim_foreground = "#7f849c"
-bright_foreground = "#cdd6f4"
+background = "#111111"
+foreground = "#ffffff"
+dim_foreground = "#111111"
+bright_foreground = "#ffffff"
 
 [colors.cursor]
-text = "#1e1e2e"
-cursor = "#f5e0dc"
+text = "#111111"
+cursor = "#ffffff"
 
 [colors.vi_mode_cursor]
-text = "#1e1e2e"
-cursor = "#b4befe"
+text = "#111111"
+cursor = "#ffffff"
 
 [colors.search.matches]
 foreground = "#1e1e2e"
@@ -51,8 +49,8 @@ foreground = "#1e1e2e"
 background = "#a6adc8"
 
 [colors.selection]
-text = "#1e1e2e"
-background = "#f5e0dc"
+text = "#111111"
+background = "#ffffff"
 
 [colors.normal]
 black = "#45475a"
