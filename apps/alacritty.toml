@@ -11,8 +11,9 @@ opacity = 0.63
 blur = true
 
 [font]
-normal.family = "JetBrainsMonoExtraBold Nerd Font Mono"
+normal.family = "JetBrainsMono NFM"
 size = 11
+normal.style = "ExtraBold"
 
 [colors.primary]
 background = "#111111"
