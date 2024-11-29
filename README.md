@@ -16,3 +16,4 @@
 5. Open a new Terminal and wait until the prompt is displayed
 
 ## Pictures
+![Desktop](assets/desktop.jpg)
