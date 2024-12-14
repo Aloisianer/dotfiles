@@ -1,0 +1,48 @@
+{
+  "modules-left": [
+    "tray"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "battery",
+    "memory",
+    "cpu",
+    "pulseaudio"
+  ],
+  "pulseaudio": {
+    "format": "  {volume}%"
+  },
+  "battery": {
+    "interval": 10,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "󰁽 {capacity}%",
+    "format-full": "󰁹 {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "tooltip": false
+  },
+  "clock": {
+    "interval": 1,
+    "format": "{:%H:%M}",
+    "tooltip": false
+  },
+  "memory": {
+    "interval": 1,
+    "format": "  {percentage}%",
+    "states": {
+      "warning": 85
+    }
+  },
+  "cpu": {
+    "interval": 1,
+    "format": "  {usage}%"
+  },
+  "tray": {
+    "icon-size": 15,
+    "spacing": 5
+  }
+}
