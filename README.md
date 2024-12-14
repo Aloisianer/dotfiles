@@ -20,4 +20,4 @@
 1. `nano ~/.config/hypr/hyprland.conf` and uncomment `# source = ~/.config/hypr/audio.conf`
 
 ## Pictures
-![Desktop](assets/desktop.jpg)
+![Desktop](assets/desktop.png)
