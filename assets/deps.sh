@@ -6,7 +6,7 @@ paru -S xdg-user-dirs adw-gtk-theme adwaita-qt5 adwaita-qt6 qt5ct qt6ct hyprland
 echo -----------------
 echo     ZSH Deps
 echo -----------------
-paru -S oh-my-posh-bin zsh zoxide
+paru -S oh-my-posh-bin zsh zoxide bat eza
 
 echo -----------------
 echo    Good Audio
