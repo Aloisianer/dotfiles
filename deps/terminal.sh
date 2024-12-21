@@ -1,0 +1,1 @@
+paru -S oh-my-posh-bin zsh zoxide bat eza
