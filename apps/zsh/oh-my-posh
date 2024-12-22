@@ -1,4 +1,4 @@
-export POSH_THEME="$HOME/.config/hypr/apps/zsh/oh-my-posh-zsh.json"
+export POSH_THEME="$HOME/.config/hypr/apps/zsh/oh-my-posh.json"
 export POSH_SHELL_VERSION=$ZSH_VERSION
 export POSH_SESSION_ID=$'b77c63ac-c89a-4ee7-adec-7d2b6a425cb6'
 export POWERLINE_COMMAND='oh-my-posh'

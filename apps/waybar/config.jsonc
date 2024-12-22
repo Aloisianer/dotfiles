@@ -1,5 +1,6 @@
 {
   "modules-left": [
+    "hyprland/workspaces",
     "tray"
   ],
   "modules-center": [
@@ -44,5 +45,9 @@
   "tray": {
     "icon-size": 15,
     "spacing": 5
+  },
+  "hyprland/workspaces": {
+    "active-only": true,
+    "all-outputs": false
   }
 }

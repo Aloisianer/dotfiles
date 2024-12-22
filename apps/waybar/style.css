@@ -28,9 +28,9 @@
   transition-duration: 0.5s;
 }
 
-#battery, #cpu, #memory, #clock, #bluetooth, #pulseaudio, #tray {
+#battery, #cpu, #memory, #clock, #bluetooth, #pulseaudio, #tray, #workspaces {
   background-color: alpha(@base, 0.9);
-  padding: 0 10px;
+  padding: 4px 9px;
   margin: 2px 4px 5px 4px;
   border-radius: 10px;
   box-shadow: 3px 3px 1px 1px alpha(@shadow, 0.7);
@@ -49,29 +49,30 @@ window > box {
 
 #tray {
   color: rgb(255, 255, 255);
-  padding: 10px
 }
 #memory {
   color: rgb(255, 255, 255);
-  padding: 10px;
 }
 #cpu {
   color: rgb(255, 255, 255);
-  padding: 10px;
 }
 #clock {
   color: rgb(255, 255, 255);
-  padding: 10px;
 }
 #pulseaudio {
   color: rgb(255, 255, 255);
-  padding: 10px;
 }
 #battery.charging, #battery.full, #battery.discharging {
   color: rgb(255, 255, 255);
-  padding: 10px;
 }
 #battery.critical:not(.charging) {
   color: rgb(242, 143, 173);
-  padding: 10px;
+}
+
+#workspaces button {
+  padding: 4px 1px;
+}
+
+#workspaces button:hover {
+  background: rgba(0,0,0,0);
 }

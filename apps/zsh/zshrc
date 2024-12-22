@@ -1,5 +1,5 @@
 # ---------------
-#     Zinit
+#   Good Stuff
 # ---------------
 
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -14,9 +14,13 @@ autoload -U compinit && compinit
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
-source ~/.config/hypr/apps/zsh/oh-my-posh-zsh
+source ~/.config/hypr/apps/zsh/oh-my-posh
 source ~/.config/hypr/apps/zsh/zoxide
 source ~/.config/hypr/apps/zsh/fzf
+
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 
 
 # ---------------
