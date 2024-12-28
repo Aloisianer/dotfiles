@@ -12,5 +12,5 @@ if [ -d "$SCREENSHOTS" ]; then
   grim -g "$SIZE" - | wl-copy
 else
   mkdir -p "$SCREENSHOTS"
-  ~/.config/hypr/screenshot.sh
+  ~/.config/hypr/apps/screenshot.sh
 fi
