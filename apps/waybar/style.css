@@ -32,9 +32,9 @@
   background-color: alpha(@base, 0.9);
   padding: 4px 9px;
   margin: 2px 4px 5px 4px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 3px 3px 1px 1px alpha(@shadow, 0.7);
-  border: 1px solid @border;
+  border: 2px solid @border;
   background-clip: padding-box;
 }
 
