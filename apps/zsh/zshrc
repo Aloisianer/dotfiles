@@ -2,21 +2,10 @@
 #   Good Stuff
 # ---------------
 
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-if [ ! -d "$ZINIT_HOME" ]; then
-  mkdir -p "$(dirname $ZINIT_HOME)"
-  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-fi
-source "${ZINIT_HOME}/zinit.zsh"
-
-autoload -U compinit && compinit
-
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-source ~/.config/hypr/apps/zsh/oh-my-posh
+source ~/.config/hypr/apps/zsh/starship
+source ~/.config/hypr/apps/zsh/syntax/init
+source ~/.config/hypr/apps/zsh/suggestions
 source ~/.config/hypr/apps/zsh/zoxide
-source ~/.config/hypr/apps/zsh/fzf
 
 bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line

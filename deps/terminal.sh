@@ -1,1 +1,1 @@
-paru -S oh-my-posh-bin zsh zoxide bat eza
+paru -S starship zsh zoxide bat eza
