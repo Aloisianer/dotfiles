@@ -1,7 +1,10 @@
 source ~/.config/hypr/apps/zsh/starship
 source ~/.config/hypr/apps/zsh/syntax/init
+source ~/.config/hypr/apps/zsh/completions/init
 source ~/.config/hypr/apps/zsh/suggestions
 source ~/.config/hypr/apps/zsh/zoxide
+
+autoload -U compinit; compinit
 
 bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
@@ -31,5 +34,3 @@ alias fzf='fzf --preview "bat --force-colorization --theme base16-256"'
 alias vencord-installer='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 
 unsetopt PROMPT_SP
-echo
-fastfetch
