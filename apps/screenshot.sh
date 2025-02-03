@@ -7,9 +7,7 @@
 SCREENSHOTS="$(xdg-user-dir PICTURES)/Screenshots"
 
 if [ -d "$SCREENSHOTS" ]; then
-  SIZE="$(slurp)"
-  grim -g "$SIZE" "$SCREENSHOTS/Screenshot_$(date +"%Y.%m.%d-%T").png"
-  grim -g "$SIZE" - | wl-copy
+  hyprshot -z -m region -o $SCREENSHOTS
 else
   mkdir -p "$SCREENSHOTS"
   ~/.config/hypr/apps/screenshot.sh

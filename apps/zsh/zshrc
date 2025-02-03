@@ -32,5 +32,6 @@ alias _cat='/bin/cat'
 alias ..='cd ..'
 alias fzf='fzf --preview "bat --force-colorization --theme base16-256"'
 alias vencord-installer='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+alias searchfs='sudo find / -name '
 
 unsetopt PROMPT_SP
