@@ -18,20 +18,19 @@ setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
 
-alias ls='ls --color=auto -F'
-alias grep='grep --color=auto'
+alias grep='ugrep'
 alias fastfetch='fastfetch --config ~/.config/hypr/apps/fastfetch.jsonc -l arch_small'
 alias bat='bat --force-colorization --theme base16-256'
 alias eza='eza -F --icons=always --all -x'
 
 alias ls='eza'
-alias l='ls -l'
+alias l='eza -l'
 alias cd='z'
 alias cat='bat'
 alias _cat='/bin/cat'
-alias ..='cd ..'
 alias fzf='fzf --preview "bat --force-colorization --theme base16-256"'
 alias vencord-installer='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias searchfs='sudo find / -name '
 
 unsetopt PROMPT_SP
+export TERM=xterm-256color
