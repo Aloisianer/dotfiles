@@ -23,6 +23,7 @@ selection-foreground = cdd6f4
 window-padding-x = 8
 window-padding-y = 8
 
+resize-overlay = never
 gtk-titlebar = false
 gtk-adwaita = false
 bold-is-bright = true
