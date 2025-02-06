@@ -1,0 +1,1 @@
+paru -S arp-scan nmap bind net-tools
