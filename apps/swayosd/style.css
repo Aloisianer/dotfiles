@@ -1,0 +1,9 @@
+window#osd {
+  background-color: alpha(#b4befe, 0.2);
+  padding: 0px 10px;
+  margin: 2px 4px 5px 4px;
+  border-radius: 15px;
+  background-clip: padding-box;
+  border: 2px solid alpha(#b4befe, 0.6);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
