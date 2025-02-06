@@ -19,7 +19,7 @@ setopt hist_ignore_dups
 setopt hist_verify
 
 alias grep='ugrep'
-alias fastfetch='fastfetch --config ~/.config/hypr/apps/fastfetch.jsonc -l arch_small'
+alias fastfetch='fastfetch --config ~/.config/hypr/apps/fastfetch.jsonc'
 alias bat='bat --force-colorization --theme base16-256'
 alias eza='eza -F --icons=always --all -x'
 
