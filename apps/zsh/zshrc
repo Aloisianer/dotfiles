@@ -22,6 +22,7 @@ alias grep='ugrep'
 alias fastfetch='fastfetch --config ~/.config/hypr/apps/fastfetch.jsonc'
 alias bat='bat --force-colorization --theme base16-256'
 alias eza='eza -F --icons=always --all -x'
+alias nvim='nvim -u ~/.config/hypr/apps/nvim/config.lua'
 
 alias ls='eza'
 alias l='eza -l'
