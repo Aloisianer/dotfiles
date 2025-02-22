@@ -10,7 +10,7 @@
 #battery, #cpu, #memory, #clock, #bluetooth, #pulseaudio, #tray {
   border-radius: 13px;
   background-clip: padding-box;
-  padding: 5px 15px 2px 15px;
+  padding: 3px 15px 0px 15px;
 }
 
 window#waybar {
