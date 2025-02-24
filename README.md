@@ -1,6 +1,7 @@
 # Hyprland Dotfiles
 ### Apps / Configurations:
-- ZSH (oh-my-posh)
+- NU (starship)
+- ZSH (starship)
 - Waybar
 - Rofi
 - Hyprlock

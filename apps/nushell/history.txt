@@ -1,0 +1,224 @@
+ls
+ls | sort-by modified
+ls | sort-by modified --reverse
+exit
+ls
+eza
+cd ..
+cd apps/
+ls
+mkdir nu
+ls
+cd nu/
+ls
+eza
+ls
+paru carapace
+ls
+touch config.nu
+nano config.nu
+ls
+touch env.nu
+rm env.nu
+nano ~/.config/nushell/env.nu
+ls
+l
+nano config.nu
+codium config.nu
+open --help
+open -e config.nu
+ls
+cat config.nu
+cat config.nu | wl-copy
+ls
+cd ..
+cd nushell/
+ls
+nano config.nu
+ls
+dir
+cat
+ls
+cat lunitely-private.asc
+ls
+starship
+starship init nushell
+starship init nu
+cd .config/nushell/
+ls
+z
+which cd
+unalias cd
+alias cd
+alias cd = cd
+ls
+cd .config/nushell/
+ls
+/bin/cd .config/hypr/
+zoxide
+starship init nu
+starship init nu > .config/nushell/starship.nu
+starship init nu | save .config/nushell/starship.nu
+cat .config/nushell/starship.nu
+ls
+zoxide --help
+zoxide init
+zoxide init nu
+zoxide init nushell
+zoxide init nushell | save ~/.config/nushell/zoxide.nu
+nano config.nu
+ls
+cd Home/
+cd
+ls
+cd apps/zsh
+ls
+cd
+exit
+nu
+echo $env.STARSHIP_SHELL
+ls
+nano .config/hypr/hyprland.conf
+ls
+cd .config/hypr/
+ls
+cd
+ls
+cd .config/hypr/
+ls
+cd apps/
+ls
+cd zsh/
+ls
+mv starship.toml ..
+ls
+paru
+exit
+ls
+echo $env.STARSHIP_SHELL
+echo $env
+$env
+sudo chroot /
+ls
+cd
+ls
+starship init nu
+ls
+cd .config/nushell/
+ls
+nano config.nu
+cd .config/nushell/
+ls
+cd .config/hypr/apps/zsh/
+ls
+cat zshrc
+nano config.nu
+cd .config/nushell/
+ls
+nano config.nu
+ls
+cd .config/nushell/
+config nu
+nano config.nu
+config nu
+echo $nu.default-config-dir
+$nu.default-config-dir = ~/.config/hypr/apps/nushell
+let $nu.default-config-dir = ~/.config/hypr/apps/nushell
+let default-config-dir = ~/.config/hypr/apps/nushell
+mut $nu.default-config-dir = ~/.config/hypr/apps/nushell
+$nu.default-config-dir = ~/.config/hypr/apps/nushell
+$env.config
+$env.config | fin
+$env.config | find
+$env.config | find dir
+$env.config
+$env.config | grep dir
+$env.config | grep config
+$env.config | table -e | bat -p
+$env.config.show_banner = false
+config nu
+ls
+cd ..
+ls
+cd nushell/
+ls
+nano config.nu
+ls
+fastfetch
+ls
+cd .config/nushell/ls
+cd .config/nushell/
+ls
+nano config.nu
+ls
+cd ..
+ls
+cd hypr/
+ls
+cd apps/
+ls
+cd ..
+ls
+cd apps/
+ls
+cd ..
+ls
+cd
+cat /etc/env
+cat /etc/environment
+cd .config/hypr/
+ls
+nano hyprland.conf
+ls
+paru
+ls
+nu --help
+date
+date today
+date
+date now
+ls
+cd Home/KernelPanic/
+ls
+cd GoogleDriveClone/ls
+cd GoogleDriveClone/
+ls
+codium config.nu
+codium .
+cd .config/hypr/
+ls
+cd apps/
+ls
+cd obsidian/
+l
+s
+ls
+cd ..
+ls
+cd calf/
+ls
+cd ..
+ls
+cd VSCodium/
+ls
+cd ..
+ls
+cd ..
+ls
+cd .config/hypr/
+ls
+codium .
+fastfetch
+cd .config/
+ls
+mkdir fastfetch
+cd fastfetch/
+ls
+fastfetch
+ls
+kitty
+nano .gitignore
+sudo pacman -S tree
+cd .config/hypr/
+tree
+tree | wl-copy
