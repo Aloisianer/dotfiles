@@ -1,20 +1,15 @@
 apps/*
 
-!apps/nushell/
 !apps/waybar/
 !apps/zsh/
 !apps/ghostty/
 !apps/fastfetch/
 
-!apps/nushell/**
-!apps/waybar/**
-!apps/zsh/**
-!apps/ghostty/**
-!apps/fastfetch/**
-
+!apps/nushell/config.nu
+!apps/nushell/starship.nu
+!apps/nushell/zoxide.nu
 apps/nushell/history.txt
 
-!apps/nushell/**
 !apps/waybar/**
 !apps/zsh/**
 !apps/ghostty/**

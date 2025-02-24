@@ -3,6 +3,7 @@ source zoxide.nu
 
 $env.config.buffer_editor = "nano"
 $env.config.show_banner = false
+$env.TERM = "xterm-256color"
 
 alias grep = ugrep
 alias bat = bat --force-colorization --theme base16-256
