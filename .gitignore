@@ -5,3 +5,4 @@ apps/*
 !apps/nushell/**
 !apps/waybar/**
 !apps/zsh/**
+apps/nushell/history.txt
