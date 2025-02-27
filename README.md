@@ -1,27 +1,15 @@
 # Hyprland Dotfiles
-### Apps / Configurations:
-- NU (starship)
-- ZSH (starship)
-- Waybar
-- Rofi
-- Hyprlock
-- Alacritty
 
 ## Installation
-1. `cd ~/.config`, go into your config directory
-2. `mv hypr hypr.bak`, create a backup of your files. Don't do this inside Hyprland or else the default configuration will be recreated!
-3. `git clone https://github.com/FerrousInk/dotfiles hypr`, clone the dotfiles
-4. Install the dependencies you want
-- ~/.config/hypr/deps/hyprland.sh
-- ~/.config/hypr/deps/terminal.sh
-- ~/.config/hypr/deps/audio.sh
+1. `cd`, go to your $HOME directory
+2. `git clone https://github.com/FerrousInk/dotfiles .dotfiles`, clone the dotfiles into your $HOME and hide them
+3. `cd .dotfiles`, move into the dotfiles
+4. `stow .`, use stow to easly manage the dotfiles
 
-#### ZSH Configuration
-1. `nano ~/.zshrc`, add `source ~/.config/hypr/apps/zsh/zshrc` and press Ctrl+S and then Ctrl+X
-2. Open a new Terminal and wait until the prompt is displayed
-
-#### Good Audio
-1. `nano ~/.config/hypr/hyprland.conf` and uncomment `exec-once = [ workspace special:magic silent ] carla`, this will start carla everytime you login
-
-## Pictures
-![Desktop](assets/desktop.png)
+5. `~/.dotfiles/extra/deps/hyprland.sh`, for Hyprland Dependencies
+6. `~/.dotfiles/extra/deps/amd.sh`, for Hyprland AMD Dependencies (also needs main Hyprland Deps)
+7. `~/.dotfiles/extra/deps/nvidia.sh`, for Hyprland NVIDIA Dependencies (also needs main Hyprland Deps)
+8. `~/.dotfiles/extra/deps/terminal.sh`, for Terminal Dependencies (ZSH and NuShell)
+9. `~/.dotfiles/extra/deps/coolstuff.sh`, for Cool Cli Tools
+10. `~/.dotfiles/extra/deps/network.sh`, for Network Tools
+11. `~/.dotfiles/extra/deps/audio.sh`, for Audio Tools
