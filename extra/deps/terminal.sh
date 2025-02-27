@@ -2,7 +2,6 @@ paru -S --config ~/.dotfiles/extra/deps/pacman.conf \
 starship \
 nushell \
 zsh \
-zoxide \
 bat \
 eza \
 zsh-completions \

@@ -1,6 +1,5 @@
 source ~/.config/zsh/starship
 source ~/.config/zsh/suggestions
-source ~/.config/zsh/zoxide
 source ~/.config/zsh/syntax/init
 source ~/.config/zsh/completions/init
 
@@ -24,7 +23,6 @@ alias eza='eza -F --icons=always --all -x'
 
 alias ls='eza'
 alias l='eza -l'
-alias cd='z'
 alias cat='bat'
 alias _cat='/bin/cat'
 alias fzf='fzf --preview "bat --force-colorization --theme base16-256"'
