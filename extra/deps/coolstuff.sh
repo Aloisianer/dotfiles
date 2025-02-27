@@ -1,2 +1,5 @@
-paru -S diskonaut fastfetch kew sshpass \
---config ~/.dotfiles/extra/deps/pacman.conf
+paru -S --config ~/.dotfiles/extra/deps/pacman.conf \
+diskonaut \
+fastfetch \
+kew \
+sshpass

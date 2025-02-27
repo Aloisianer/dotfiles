@@ -1,2 +1,6 @@
-paru -S carla calf lsp-plugins pavucontrol noise-suppression-for-voice \
---config ~/.dotfiles/extra/deps/pacman.conf
+paru -S --config ~/.dotfiles/extra/deps/pacman.conf \
+carla \
+calf \
+lsp-plugins \
+pavucontrol \
+noise-suppression-for-voice

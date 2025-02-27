@@ -1,2 +1,5 @@
-paru -S arp-scan nmap bind net-tools \
---config ~/.dotfiles/extra/deps/pacman.conf
+paru -S --config ~/.dotfiles/extra/deps/pacman.conf \
+arp-scan \
+nmap \
+bind \
+net-tools

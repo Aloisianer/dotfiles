@@ -1,2 +1,33 @@
-paru -S xdg-user-dirs adw-gtk-theme adwaita-qt5 adwaita-qt6 qt5ct qt6ct hyprland hyprpaper waybar swaync rofi-wayland grim slurp polkit-gnome nautilus ghostty-x86_64-v3-git ttf-jetbrains-mono-nerd brightnessctl wl-clipboard xclip nwg-displays nwg-look xdg-desktop-portal-gtk xdg-desktop-portal-hyprland hyprlock hypridle qt5-wayland gamescope xorg-xhost hyprpicker hyprshot swayosd-git \
---config ~/.dotfiles/extra/deps/pacman.conf
+paru -S --config ~/.dotfiles/extra/deps/pacman.conf \
+xdg-user-dirs \
+adw-gtk-theme \
+adwaita-qt5 \
+adwaita-qt6 \
+qt5ct \
+qt6ct \
+hyprland \
+hyprpaper \
+waybar \
+swaync \
+rofi-wayland \
+grim \
+slurp \
+polkit-gnome \
+nautilus \
+alacritty \
+ttf-jetbrains-mono-nerd \
+brightnessctl \
+wl-clipboard \
+xclip \
+nwg-displays \
+nwg-look \
+xdg-desktop-portal-gtk \
+xdg-desktop-portal-hyprland \
+hyprlock \
+hypridle \
+qt5-wayland \
+gamescope \
+xorg-xhost \
+hyprpicker \
+hyprshot \
+swayosd-git
