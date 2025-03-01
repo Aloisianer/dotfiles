@@ -1,4 +1,7 @@
 {
+    "modules-left": [
+      "hyprland/workspaces"
+    ],
     "modules-center": [
       "clock"
     ],
