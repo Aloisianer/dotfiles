@@ -1,4 +1,4 @@
-paru -S --config ~/.dotfiles/extra/deps/pacman.conf \
+paru -Syy --config ~/.dotfiles/extra/deps/pacman.conf \
 starship \
 nushell \
 zsh \
