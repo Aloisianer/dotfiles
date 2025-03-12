@@ -1,9 +1,10 @@
 {
     "modules-left": [
+      "clock",
       "hyprland/workspaces"
     ],
     "modules-center": [
-      "clock"
+      "custom/music"
     ],
     "modules-right": [
       "battery",
@@ -45,5 +46,16 @@
     "tray": {
       "icon-size": 15,
       "spacing": 5
+    },
+    "custom/music": {
+      "format": "{0}",
+      "max-length": 100,
+      "escape": true,
+      "tooltip": true,
+      "interval": 1,
+      "exec": "playerctl metadata --format '{{title}}'",
+      "on-click": "playerctl play-pause",
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous"
     }
   }

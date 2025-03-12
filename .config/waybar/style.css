@@ -7,7 +7,7 @@
   transition-duration: 0.5s;
 }
 
-#battery, #cpu, #memory, #clock, #bluetooth, #pulseaudio, #tray, #workspaces {
+#battery, #cpu, #memory, #clock, #bluetooth, #pulseaudio, #tray, #workspaces, #custom-music {
   border-radius: 13px;
   background-clip: padding-box;
   padding: 3px 15px 0px 15px;
@@ -46,4 +46,9 @@ window > box {
 }
 #battery.critical:not(.charging) {
   color: rgb(242, 143, 173);
+}
+#custom-music {
+  animation: gradient 15s ease infinite;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
