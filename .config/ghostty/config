@@ -40,3 +40,5 @@ font-family = "JetBrainsMono NFM ExtraBold"
 font-family-bold = "JetBrainsMono NFM ExtraBold"
 font-family-italic = "JetBrainsMono NFM ExtraBold Italic"
 font-family-bold-italic = "JetBrainsMono NFM ExtraBold Italic"
+
+custom-shader = ghostty-shaders/drunkard.glsl
