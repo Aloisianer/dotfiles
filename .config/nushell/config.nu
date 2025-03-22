@@ -16,7 +16,4 @@ alias ls = eza
 alias l = eza -l
 alias cat = bat
 alias _cat = /bin/cat
-alias vencord-installer = sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
-alias searchfs = sudo find / -name 
-
-alias hssh = ~/.config/hypr/apps/zsh/hssh.sh
+alias searchfs = sudo find / -name

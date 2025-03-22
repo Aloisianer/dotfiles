@@ -29,7 +29,5 @@ alias fzf='fzf --preview "bat --force-colorization --theme base16-256"'
 alias vencord-installer='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias searchfs='sudo find / -name '
 
-alias hssh="~/.config/zsh/hssh.sh"
-
 unsetopt PROMPT_SP
 export TERM=xterm-256color
