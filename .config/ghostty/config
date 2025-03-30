@@ -1,9 +1,4 @@
 background = 000000
-foreground = FF0000
-cursor-color = f5e0dc
-cursor-text = 1e1e2e
-selection-background = 333333
-selection-foreground = FFFFFF
 
 window-padding-x = 0
 window-padding-y = 0
@@ -12,14 +7,14 @@ resize-overlay = never
 gtk-titlebar = false
 gtk-adwaita = false
 bold-is-bright = true
-shell-integration-features = true
-shell-integration = zsh
 confirm-close-surface = false
 window-colorspace = srgb
 window-vsync = true
 title = "Ghostty"
 window-decoration = true
+command = cava
 
+font-size = 5
 font-family = "JetBrainsMono NFM ExtraBold"
 font-family-bold = "JetBrainsMono NFM ExtraBold"
 font-family-italic = "JetBrainsMono NFM ExtraBold Italic"
