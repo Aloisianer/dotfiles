@@ -12,7 +12,8 @@ size = 13.5
 
 
 
-
+[cursor]
+style = "Beam"
 
 [colors.primary]
 background = "#1e1e2e"
