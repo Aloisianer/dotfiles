@@ -2,7 +2,7 @@
 
 ## Installation
 1. `cd`, go to your $HOME directory
-2. `git clone https://github.com/FerrousInk/dotfiles .dotfiles`, clone the dotfiles into your $HOME and hide them
+2. `git clone https://github.com/Aloisianer/dotfiles .dotfiles`, clone the dotfiles into your $HOME and hide them
 3. `cd .dotfiles`, move into the dotfiles
 4. `stow .`, use stow to easly manage the dotfiles
 
