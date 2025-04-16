@@ -30,4 +30,5 @@ gamescope \
 xorg-xhost \
 hyprpicker \
 hyprshot \
-swayosd-git
+swayosd-git \
+network-manager-applet
