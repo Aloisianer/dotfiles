@@ -10,5 +10,5 @@ if [ -d "$SCREENSHOTS" ]; then
   hyprshot -z -m region -o $SCREENSHOTS
 else
   mkdir -p "$SCREENSHOTS"
-  ~/.config/hypr/apps/screenshot.sh
+  ~/.dotfiles/extra/screenshot.sh
 fi

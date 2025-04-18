@@ -1,6 +1,6 @@
 [general]
 mode = scientific
-framerate = 165
+framerate = 100
 autosens = 1
 bar_width = 1
 bar_spacing = 0
@@ -15,7 +15,6 @@ noise_reduction = 25
 [color]
 gradient = 1
 
-background = '#000000'
 foreground = '#FF0000'
 
 gradient_color_1 = '#FFFFFF'

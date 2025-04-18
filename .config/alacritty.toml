@@ -3,7 +3,7 @@ padding.x = 10
 padding.y = 10
 
 decorations = "None"
-opacity = 1
+opacity = 0.5
 
 [font]
 normal.family = "JetBrainsMono Nerd Font Mono"
@@ -16,7 +16,7 @@ size = 13.5
 style = "Beam"
 
 [colors.primary]
-background = "#1e1e2e"
+background = "#000000"
 foreground = "#cdd6f4"
 dim_foreground = "#7f849c"
 bright_foreground = "#cdd6f4"
