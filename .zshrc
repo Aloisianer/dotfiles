@@ -31,3 +31,11 @@ alias searchfs='sudo find / -name '
 
 unsetopt PROMPT_SP
 export TERM=xterm-256color
+
+# pnpm
+export PNPM_HOME="/home/moaug/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
