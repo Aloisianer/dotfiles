@@ -31,4 +31,5 @@ xorg-xhost \
 hyprpicker \
 hyprshot \
 swayosd-git \
-network-manager-applet
+network-manager-applet \
+morewaita-icon-theme
