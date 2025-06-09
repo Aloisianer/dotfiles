@@ -32,4 +32,5 @@ hyprpicker \
 hyprshot \
 swayosd-git \
 network-manager-applet \
-morewaita-icon-theme
+morewaita-icon-theme \
+apple_cursor
