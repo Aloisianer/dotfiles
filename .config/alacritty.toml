@@ -3,7 +3,7 @@ padding.x = 10
 padding.y = 10
 
 decorations = "None"
-opacity = 0.5
+opacity = 0.3
 
 [font]
 normal.family = "JetBrainsMono Nerd Font Mono"
