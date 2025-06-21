@@ -4,4 +4,4 @@ vulkan-radeon \
 lib32-mesa \
 mesa \
 lact-libadwaita \
-rocm-smi-lib
+opencl-amd

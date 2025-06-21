@@ -33,4 +33,4 @@ hyprshot \
 swayosd-git \
 network-manager-applet \
 morewaita-icon-theme \
-apple_cursor
+adwaita-cursors
