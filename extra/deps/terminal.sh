@@ -1,4 +1,4 @@
-paru -Syy --config ~/.dotfiles/extra/deps/pacman.conf \
+paru -Syu \
 starship \
 nushell \
 zsh \
@@ -6,6 +6,4 @@ bat \
 eza \
 zsh-completions \
 btop \
-ugrep \
-ttf-jetbrains-mono \
-ttf-jetbrains-mono-nerd
+ugrep

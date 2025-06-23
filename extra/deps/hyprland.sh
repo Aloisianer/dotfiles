@@ -1,4 +1,4 @@
-paru -Syy --config ~/.dotfiles/extra/deps/pacman.conf \
+paru -Syu \
 xdg-user-dirs \
 adw-gtk-theme \
 adwaita-qt5 \
@@ -33,4 +33,10 @@ hyprshot \
 swayosd-git \
 network-manager-applet \
 morewaita-icon-theme \
-adwaita-cursors
+adwaita-cursors \
+adobe-source-code-pro-fonts \
+adobe-source-han-sans-jp-fonts \
+noto-fonts \
+noto-fonts-cjk \
+noto-fonts-emoji \
+ttf-win10

@@ -1,4 +1,5 @@
-paru -Syy --config ~/.dotfiles/extra/deps/pacman.conf \
+~/.dotfiles/extra/deps/hyprland.sh
+paru -Syu \
 lib32-vulkan-radeon \
 vulkan-radeon \
 lib32-mesa \

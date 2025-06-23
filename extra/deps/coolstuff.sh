@@ -1,3 +1,12 @@
-paru -Syy --config ~/.dotfiles/extra/deps/pacman.conf \
+paru -Syu \
 diskonaut \
-fastfetch
+fastfetch \
+arp-scan \
+nmap \
+bind \
+net-tools \
+ettercap \
+carla \
+calf \
+pavucontrol \
+noise-suppression-for-voice
