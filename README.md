@@ -7,8 +7,10 @@
 4. `stow .`, use GNU Stow to easly manage the dotfiles (`pacman -S stow`)
 
 ## Dependencies
-5. `~/.dotfiles/extra/deps/hyprland.sh`, for Hyprland
-6. `~/.dotfiles/extra/deps/amd.sh`, for Hyprland + AMD (includes main Hyprland deps)
-7. `~/.dotfiles/extra/deps/nvidia.sh`, for Hyprland + NVIDIA (includes main Hyprland deps)
-8. `~/.dotfiles/extra/deps/terminal.sh`, for Terminal (ZSH and NuShell)
-9. `~/.dotfiles/extra/deps/coolstuff.sh`, for Cool Stuff
+1. `~/.dotfiles/extra/deps/hyprland.sh`, for Hyprland
+2. `~/.dotfiles/extra/deps/amd.sh`, for Hyprland + AMD (includes main Hyprland deps)
+3. `~/.dotfiles/extra/deps/nvidia.sh`, for Hyprland + NVIDIA (includes main Hyprland deps)
+4. `~/.dotfiles/extra/deps/terminal.sh`, for Terminal (ZSH and NuShell)
+5. `~/.dotfiles/extra/deps/coolstuff.sh`, for Cool Stuff
+### Battery
+> To enable Hypridle (for diming the screen, etc) run `systemctl --user enable hypridle`
