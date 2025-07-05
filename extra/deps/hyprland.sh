@@ -39,4 +39,7 @@ adobe-source-han-sans-jp-fonts \
 noto-fonts \
 noto-fonts-cjk \
 noto-fonts-emoji \
-ttf-win10
+ttf-win10 \
+blueman \
+quickshell \
+gnome-keyring
