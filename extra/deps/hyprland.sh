@@ -41,5 +41,5 @@ noto-fonts-cjk \
 noto-fonts-emoji \
 ttf-win10 \
 blueman \
-quickshell \
-gnome-keyring
+gnome-keyring \
+kitty
