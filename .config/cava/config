@@ -17,10 +17,10 @@ gradient = 1
 
 foreground = '#FF0000'
 
-gradient_color_1 = '#FFFFFF'
-gradient_color_2 = '#FED2E2'
-gradient_color_3 = '#E9A5F1'
-gradient_color_4 = '#E9A5F1'
-gradient_color_5 = '#C68EFD'
-gradient_color_6 = '#8F87F1'
-gradient_color_7 = '#8F87F1'
+gradient_color_1 = '#EAEFEF'
+gradient_color_2 = '#B8CFCE'
+gradient_color_3 = '#B8CFCE'
+gradient_color_4 = '#7F8CAA'
+gradient_color_5 = '#7F8CAA'
+gradient_color_6 = '#333446'
+gradient_color_7 = '#333446'

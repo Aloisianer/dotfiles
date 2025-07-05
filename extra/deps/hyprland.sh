@@ -43,4 +43,5 @@ ttf-win10 \
 blueman \
 gnome-keyring \
 kitty \
-eog
+eog \
+file-roller
