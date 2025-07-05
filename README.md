@@ -13,4 +13,4 @@
 4. `~/.dotfiles/extra/deps/terminal.sh`, for Terminal (ZSH and NuShell)
 5. `~/.dotfiles/extra/deps/coolstuff.sh`, for Cool Stuff
 ### Battery
-> To enable Hypridle (for diming the screen, etc) run `systemctl --user enable hypridle`
+> To enable Hypridle (for laptops, etc) run `systemctl --user enable --now hypridle`

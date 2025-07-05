@@ -42,4 +42,5 @@ noto-fonts-emoji \
 ttf-win10 \
 blueman \
 gnome-keyring \
-kitty
+kitty \
+eog
