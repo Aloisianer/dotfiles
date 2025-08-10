@@ -1,0 +1,150 @@
+@use "colors" as *;
+@use "variables" as *;
+@use "calculated" as *;
+@use "sass:color";
+
+box.notification {
+    @include nLayerBackground($surfaceContainer, 1);
+    border-radius: $hyprlandRounding;
+    min-width: 26.563rem;
+    padding: 0.5rem;
+    .header {
+        .app-icon {
+            margin-right: 0.5rem;
+            margin-left: 0.35rem;
+            min-height: 1.5rem;
+            min-width: 1.5rem;
+            font-size: 1.5rem;
+            color: $onSurface;
+        }
+        .app-title {
+            font-size: 0.875rem;
+            font-weight: 300;
+            color: $onSurfaceVariant;
+            font-family: "Google Sans Text";
+        }
+        .separator {
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 300;
+            color: $onSurfaceVariant;
+            font-family: "Google Sans Text";
+        }
+        .time {
+            font-size: 0.875rem;
+            font-weight: 300;
+            color: $onSurfaceVariant;
+            font-family: "Google Sans Text";
+        }
+    }
+    .body {
+        padding-left: 2.35rem;
+
+        .title {
+            font-size: 1.15rem;
+            font-weight: 400;
+            color: $onSurface;
+            font-family: "Google Sans Display";
+        }
+        .body-text {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $onSurface;
+        }
+        .body-image {
+            margin-right: 0.5rem;
+            min-height: 4rem;
+            min-width: 4rem;
+            color: $onSurface;
+        }
+    }
+    .actions {
+        margin-top: 0.25rem;
+    }
+    .dismiss {
+        margin-right: 0.25rem;
+    }
+
+    &.critical {
+        background-color: $secondary;
+        .header {
+            .app-icon {
+                color: $onSecondary;
+            }
+            .app-title {
+                color: $onSecondary;
+            }
+            .separator {
+                color: $onSecondary;
+            }
+            .time {
+                color: $onSecondary;
+            }
+        }
+        .body {
+            .title {
+                color: $onSecondary;
+            }
+            .body-text {
+                color: $onSecondary;
+            }
+        }
+        button label {
+            color: $onSecondary;
+        }
+        button {
+            &:hover {
+                background-color: color.mix(transparent, $inverseOnSurface, 92%);
+            }
+            &:active {
+                background-color: color.mix(transparent, $inverseOnSurface, 90%);
+            }
+        }
+    }
+}
+
+box.notification-revealer-box,
+box.notification-revealer {
+    min-height: 1px;
+    min-width: 1px;
+}
+
+box.notification-revealer-box {
+    // Idk how, but it fixes bug with revealer
+    background: #22222201;
+}
+
+box.notification-popups,
+box.notifications {
+    > :not(:last-child) box.notification {
+        margin-bottom: 0.5rem;
+    }
+}
+
+window.notifications {
+    min-width: 26.563rem;
+    transition: none;
+    padding-bottom: 0.125rem;
+    box.notification {
+        &:not(.critical) {
+            @include nLayerBackground($background, 1);
+        }
+        border-radius: $hyprlandRounding;
+        border: 0.0625rem solid $layerBorderColor;
+    }
+}
+
+.notifications-list {
+    .notifications-categories {
+        > box > :last-child box.notification {
+            margin-bottom: 0.875rem;
+        }
+    }
+
+    .no-notifications label {
+        color: $onSurfaceVariant;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}

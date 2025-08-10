@@ -1,0 +1,130 @@
+@use "colors" as *;
+@use "variables" as *;
+@use "calculated" as *;
+@use "sass:color";
+
+window.sidebar {
+    @include nLayerBackground($surfaceContainerLowest, 1);
+    border: none;
+    min-width: 29.125rem;
+
+    &.floating {
+        border: 0.0625rem solid $layerBorderColor;
+        border-radius: $hyprlandRounding;
+    }
+    &:not(.floating) {
+        border-left: 0.0625rem solid $layerBorderColor;
+    }
+
+    .info-box {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        margin-bottom: 0.75rem;
+        .date-label {
+            color: $onSurface;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .username-label {
+            color: $onSurfaceVariant;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+
+    .management-box {
+        margin: 0.75rem;
+    }
+
+    .management-button {
+        @include elevation(1);
+        @include nLayerBackground($surfaceContainer, 2);
+        border-radius: 1.75rem;
+        padding: 1rem;
+
+        .label {
+            color: $onSurface;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .state {
+            color: $onSurfaceVariant;
+            font-size: 0.875rem;
+            font-family: "Google Sans Text";
+            font-weight: 300;
+        }
+
+        .icon {
+            color: $onSurface;
+            font-weight: 500;
+            font-size: 1.25rem;
+            font-variation-settings: "opsz" 20;
+            margin-right: 0.375rem;
+        }
+
+        &:hover {
+            background-color: color.mix($surfaceContainer, $onSurfaceVariant, 92%);
+        }
+
+        &:active {
+            background-color: color.mix($surfaceContainer, $onSurfaceVariant, 85%);
+        }
+
+        &.activated {
+            background-color: $secondary;
+            label {
+                color: $onSecondary;
+            }
+            &:hover {
+                background-color: color.mix($secondary, $inverseOnSurface, 92%);
+            }
+            &:active {
+                background-color: color.mix($secondary, $inverseOnSurface, 85%);
+            }
+        }
+
+        &:first-child {
+            margin-right: 0.188rem;
+        }
+        &:last-child {
+            margin-left: 0.188rem;
+        }
+    }
+
+    .management-line:not(:last-child) {
+        margin-bottom: 0.375rem;
+    }
+
+    .action-buttons {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        button {
+            &:not(:last-child) {
+                margin-right: 0.375rem;
+            }
+        }
+    }
+
+    .notifications-scrollable {
+        @include elevation(1);
+        @include nLayerBackground($background, 2);
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
+    }
+
+    box.notification {
+        @include elevation(1);
+        border-radius: 1.25rem;
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+
+    .clear-all {
+        margin-right: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+}

@@ -1,4 +1,3 @@
-~/.dotfiles/extra/deps/hyprland.sh
 paru -Syu \
 lib32-vulkan-radeon \
 vulkan-radeon \

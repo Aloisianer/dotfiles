@@ -1,0 +1,427 @@
+@use "colors" as *;
+@use "variables" as *;
+@use "calculated" as *;
+@use "sass:color";
+
+window.settings {
+    @include nLayerBackground($background, 1);
+    min-width: 48rem;
+    min-height: 31rem;
+
+    .settings-sidebar {
+        @include nLayerBackground($surfaceContainer, 2);
+        min-width: 14rem;
+
+        .sidebar-button {
+            border-radius: 2.75rem;
+            min-height: 2.75rem;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+            &:not(.next-separator) {
+                margin-bottom: 0.25rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0.5rem;
+            }
+
+            label {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+            .icon {
+                font-size: 1.25rem;
+                font-weight: 500;
+                margin-right: 0.5rem;
+                font-variation-settings: "opsz" 20;
+            }
+
+            &.active {
+                background-color: $secondaryContainer;
+                label {
+                    color: $onSecondaryContainer;
+                }
+                &.icon-fill .icon {
+                    font-variation-settings: "opsz" 20, "FILL" 1;
+                }
+
+                &:hover {
+                    background-color: color.mix($secondaryContainer, $onSurfaceVariant, 88%);
+                }
+                &:active {
+                    background-color: color.mix($secondaryContainer, $onSurfaceVariant, 80%);
+                }
+            }
+
+            &:not(.active) {
+                background-color: transparent;
+                label {
+                    color: $onSurface;
+                }
+
+                &:hover {
+                    background-color: color.mix(transparent, $onSurfaceVariant, 92%);
+                }
+                &:active {
+                    background-color: color.mix(transparent, $onSurfaceVariant, 90%);
+                }
+            }
+        }
+    }
+    .close {
+        margin-right: 0.25rem;
+    }
+    .page-title {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $onSurface;
+        margin: 0.5rem 1.25rem;
+    }
+    .settings-title {
+        font-size: 1.325rem;
+        font-weight: 400;
+        color: $onSurface;
+        margin: 0.5rem 1.25rem;
+    }
+
+    .settings-row {
+        background-color: transparent;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        padding: 0.5rem;
+        padding-left: 0.825rem;
+        padding-right: 0.825rem;
+        border-radius: max(calc($hyprlandRounding - 0.5rem), 0.25rem);
+
+        &:last-child {
+            margin-bottom: 0.5rem;
+        }
+
+        .label {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $onSurface;
+        }
+        .description {
+            font-size: 0.825rem;
+            font-weight: 300;
+            color: $onSurfaceVariant;
+            font-family: "Google Sans Text";
+        }
+
+        &.clickable {
+            &:hover {
+                background-color: color.mix(transparent, $onSurfaceVariant, 95%);
+            }
+            &:active {
+                background-color: color.mix(transparent, $onSurfaceVariant, 88%);
+            }
+        }
+    }
+
+    .network-page {
+        .scan-button {
+            margin-left: 0.5rem;
+        }
+        .wifi-access-point {
+            .icon {
+                font-size: 1.25rem;
+                font-weight: 500;
+                font-variation-settings: "opsz" 20;
+                color: $onSurface;
+                &.is-secure {
+                    color: $primary;
+                }
+                &.wifi-strength {
+                    margin-right: 0.5rem;
+                }
+            }
+            &.active .wifi-strength {
+                color: $primary;
+            }
+        }
+        label.not-available {
+            font-size: 0.825rem;
+            color: $onSurfaceVariant;
+            font-family: "Google Sans Text";
+            font-weight: 300;
+        }
+    }
+
+    .bluetooth-page {
+        .discover-button {
+            margin-left: 0.5rem;
+        }
+        .bluetooth-device {
+            .icon {
+                font-size: 1.25rem;
+                font-weight: 500;
+                font-variation-settings: "opsz" 20;
+                color: $onSecondary;
+                background-color: $secondary;
+                margin-right: 0.5rem;
+                border-radius: 0.25rem;
+                min-height: 1.825rem;
+                min-width: 1.825rem;
+            }
+            &.active .icon {
+                color: $onPrimary;
+                background-color: $primary;
+            }
+        }
+    }
+
+    .wallpapers-page {
+        .wallpapers-box {
+            margin: 0.25rem;
+        }
+        .wallpaper {
+            @include nLayerBackground($surfaceContainer, 2);
+            border-radius: 0.825rem;
+            min-height: 9rem;
+            min-width: 2rem;
+            margin: 0.25rem;
+            outline-offset: 0;
+
+            .image {
+                border-radius: 0.825rem;
+            }
+
+            label {
+                font-weight: 400;
+                font-size: 1rem;
+                color: $onSurfaceVariant;
+                margin: 0.5rem;
+            }
+
+            &.active {
+                outline: 0.0625rem solid $primary;
+            }
+
+            &:hover {
+                background-color: color.mix($surfaceContainer, $onSurfaceVariant, 95%);
+            }
+            &:active {
+                background-color: color.mix($surfaceContainer, $onSurfaceVariant, 88%);
+            }
+        }
+        .actions-box {
+            padding: 0.325rem;
+        }
+    }
+
+    .monitors-page {
+        .refresh-button {
+            margin-left: 0.5rem;
+        }
+        .actions-box {
+            padding: 0.325rem;
+        }
+    }
+
+    .info-page {
+        .info-row {
+            .logo {
+                font-size: 2.25rem;
+                border-radius: 50%;
+                background-color: $primary;
+                color: $onPrimary;
+                font-family: "Google Sans Display";
+                min-height: 4.5rem;
+                min-width: 4.5rem;
+                margin-right: 0.75rem;
+            }
+            .title {
+                font-size: 1.25rem;
+                font-weight: 500;
+                color: $onSurface;
+                margin-bottom: 0.25rem;
+            }
+            .author,
+            .version {
+                font-size: 1rem;
+                font-weight: 400;
+                color: $onSurfaceVariant;
+            }
+        }
+        .links-box {
+            margin: 0.5rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            button {
+                @include nLayerBackground($surfaceContainer, 2);
+                min-height: 3rem;
+                border-radius: max(calc($hyprlandRounding - 0.5rem), 0.25rem);
+                label {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: $onSurface;
+                    margin-right: 0.5rem;
+                }
+                image {
+                    color: $onSurface;
+                }
+                &:hover {
+                    background-color: color.mix($surfaceContainer, $onSurface, 90%);
+                }
+                &:active {
+                    background-color: color.mix($surfaceContainer, $onSurface, 85%);
+                }
+                &:not(:last-child) {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .keybinds-page {
+        .reset-button {
+            margin-left: 0.5rem;
+        }
+
+        .entries-box {
+            margin-top: 0.5rem;
+        }
+
+        .keybind-row {
+            @include nLayerBackground($surfaceContainerLow, 2);
+            margin-bottom: 0.5rem;
+
+            &:focus-within {
+                background-color: color.mix($surfaceContainerLow, $onSurfaceVariant, 95%);
+            }
+        }
+
+        entry {
+            margin: 0;
+            border-radius: 0.5rem;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            min-width: 0;
+            border: 0.0625rem solid $outline;
+
+            color: $onSurface;
+            min-height: 2rem;
+            outline: none;
+            background-color: transparent;
+
+            placeholder {
+                opacity: 1;
+                color: $onSurfaceVariant;
+            }
+
+            &:focus-within {
+                border-color: $primary;
+            }
+
+            &.incorrect {
+                border-color: $error;
+            }
+        }
+        .bind-entry {
+            margin-right: 0.25rem;
+        }
+        .action-entry {
+            margin-left: 0.25rem;
+        }
+        .actions-box {
+            padding: 0.325rem;
+        }
+    }
+
+    .configs-page {
+        .wiki-button:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .settings-page separator.horizontal {
+        margin: 0.25rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        opacity: 0.5;
+    }
+
+    .default-label {
+        font-size: 1rem;
+        font-weight: 300;
+        color: $onSurfaceVariant;
+        padding-bottom: 3rem;
+    }
+
+    .entry-box {
+        border-radius: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        min-width: 0;
+        border: 0.0625rem solid $outline;
+
+        &:focus-within {
+            border-color: $primary;
+        }
+
+        &.incorrect {
+            border-color: $error;
+        }
+
+        .icon {
+            font-size: 1.125rem;
+            font-variation-settings: "opsz" 20;
+            font-weight: 500;
+            color: $onSurface;
+        }
+
+        .entry {
+            color: $onSurface;
+            min-height: 0;
+            padding: 0;
+            outline: none;
+            background-color: transparent;
+            placeholder {
+                opacity: 1;
+                color: $onSurfaceVariant;
+            }
+        }
+    }
+
+    dropdown button {
+        border-radius: 0.5rem;
+        padding: 0;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        min-width: 0;
+        border: 0.0625rem solid $outline;
+
+        arrow {
+            color: $onSurface;
+        }
+
+        label {
+            color: $onSurface;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: "Google Sans Display";
+        }
+    }
+
+    .settings-category,
+    .settings-hint {
+        font-size: 0.85rem;
+        font-weight: 300;
+        color: $primary;
+        margin: 1.25rem;
+        margin-top: 0.125rem;
+        margin-bottom: 0.125rem;
+    }
+
+    .settings-category {
+        color: $primary;
+    }
+
+    .settings-hint {
+        color: $onSurfaceVariant;
+    }
+}

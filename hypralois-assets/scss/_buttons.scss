@@ -1,0 +1,377 @@
+@use "colors" as *;
+@use "variables" as *;
+@use "calculated" as *;
+@use "sass:color";
+
+button.filled {
+    border-radius: 2rem;
+    min-height: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: $primary;
+
+    label {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $onPrimary;
+    }
+    .icon {
+        font-weight: 500;
+        margin-right: 0.5rem;
+        font-variation-settings: "opsz" 20;
+    }
+    &:hover {
+        background-color: color.mix($primary, $inverseOnSurface, 82%);
+    }
+    &:active {
+        background-color: color.mix($primary, $inverseOnSurface, 75%);
+    }
+    &:disabled {
+        background-color: color.mix($onSurface, transparent, 12%);
+        label {
+            color: color.mix($onSurface, transparent, 38%);
+        }
+    }
+}
+
+button.elevated {
+    @include elevation(1);
+    border-radius: 2rem;
+    min-height: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: $surfaceContainerLow;
+
+    label {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $primary;
+    }
+    .icon {
+        font-weight: 500;
+        margin-right: 0.5rem;
+        font-variation-settings: "opsz" 20;
+    }
+    &:hover {
+        @include elevation(2);
+        background-color: color.mix($surfaceContainerLow, $primary, 92%);
+    }
+    &:active {
+        background-color: color.mix($surfaceContainerLow, $primary, 90%);
+    }
+    &:disabled {
+        box-shadow: none;
+        background-color: color.mix($onSurface, transparent, 12%);
+        label {
+            color: color.mix($onSurface, transparent, 38%);
+        }
+    }
+}
+
+button.text {
+    border-radius: 2rem;
+    min-height: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: transparent;
+
+    label {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $primary;
+    }
+    .icon {
+        font-weight: 500;
+        margin-right: 0.5rem;
+        font-variation-settings: "opsz" 20;
+    }
+    &:hover {
+        background-color: color.mix(transparent, $primary, 92%);
+    }
+    &:active {
+        background-color: color.mix(transparent, $primary, 90%);
+    }
+    &:disabled {
+        background-color: color.mix($onSurface, transparent, 12%);
+        label {
+            color: color.mix($onSurface, transparent, 38%);
+        }
+    }
+}
+
+button.outlined {
+    border-radius: 100px;
+    min-height: 2rem;
+    border: 1px solid $outline;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    label {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $primary;
+    }
+    .icon {
+        font-weight: 500;
+        margin-right: 0.5rem;
+        font-variation-settings: "opsz" 20;
+    }
+    &:hover {
+        background-color: color.mix($surfaceContainerLow, $primary, 92%);
+    }
+    &:active {
+        background-color: color.mix($surfaceContainerLow, $primary, 90%);
+    }
+    &:disabled {
+        box-shadow: none;
+        border-color: color.mix($onSurface, transparent, 12%);
+        label {
+            color: color.mix($onSurface, transparent, 38%);
+        }
+    }
+}
+
+button.attention {
+    border-radius: 100px;
+    min-height: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: $error;
+
+    label {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $onError;
+    }
+    .icon {
+        font-weight: 500;
+        margin-right: 0.5rem;
+        font-variation-settings: "opsz" 20;
+    }
+    &:hover {
+        background-color: color.mix($error, $inverseOnSurface, 82%);
+    }
+    &:active {
+        background-color: color.mix($error, $inverseOnSurface, 75%);
+    }
+    &:disabled {
+        box-shadow: none;
+        background-color: color.mix($error, transparent, 12%);
+        label {
+            color: color.mix($error, transparent, 38%);
+        }
+    }
+}
+
+button.attention-outlined {
+    border-radius: 100px;
+    min-height: 2rem;
+    border: 1px solid $error;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    label {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $error;
+    }
+    .icon {
+        font-weight: 500;
+        margin-right: 0.5rem;
+        font-variation-settings: "opsz" 20;
+    }
+    &:hover {
+        background-color: color.mix(transparent, $onSurfaceVariant, 92%);
+    }
+    &:active {
+        background-color: color.mix(transparent, $onSurfaceVariant, 90%);
+    }
+    &:disabled {
+        box-shadow: none;
+        border-color: color.mix($error, transparent, 12%);
+        label {
+            color: color.mix($error, transparent, 38%);
+        }
+    }
+}
+
+button.icon-outlined {
+    border-radius: 100px;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: 1px solid $outline;
+    border-radius: 2rem;
+
+    label {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $onSurface;
+    }
+    &:hover {
+        background-color: color.mix(transparent, $onSurfaceVariant, 92%);
+    }
+    &:active {
+        background-color: color.mix(transparent, $onSurfaceVariant, 90%);
+    }
+    &:disabled {
+        box-shadow: none;
+        border-color: color.mix($onSurface, transparent, 12%);
+        label {
+            color: color.mix($onSurface, transparent, 38%);
+        }
+    }
+}
+
+button.icon-outlined-attention {
+    border-radius: 100px;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: 1px solid $error;
+    border-radius: 2rem;
+
+    label {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $error;
+    }
+    &:hover {
+        background-color: color.mix(transparent, $onSurfaceVariant, 92%);
+    }
+    &:active {
+        background-color: color.mix(transparent, $onSurfaceVariant, 90%);
+    }
+    &:disabled {
+        box-shadow: none;
+        border-color: color.mix($error, transparent, 12%);
+        label {
+            color: color.mix($error, transparent, 38%);
+        }
+    }
+}
+
+button.icon-default {
+    min-height: 2rem;
+    min-width: 2rem;
+    border-radius: 2rem;
+
+    label {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $primary;
+    }
+    &:hover {
+        background-color: color.mix(transparent, $primary, 92%);
+    }
+    &:active {
+        background-color: color.mix(transparent, $primary, 90%);
+    }
+    &:disabled {
+        background-color: color.mix($onSurface, transparent, 12%);
+        label {
+            color: color.mix($onSurface, transparent, 38%);
+        }
+    }
+}
+
+button.icon-elevated {
+    @include elevation(1);
+    min-height: 2rem;
+    min-width: 2rem;
+    border-radius: 2rem;
+    background-color: $surfaceContainerLow;
+
+    label {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $primary;
+    }
+    &:hover {
+        @include elevation(2);
+        background-color: color.mix($surfaceContainerLow, $primary, 92%);
+    }
+    &:active {
+        background-color: color.mix($surfaceContainerLow, $primary, 90%);
+    }
+    &:disabled {
+        box-shadow: none;
+        background-color: color.mix($onSurface, transparent, 12%);
+        label {
+            color: color.mix($onSurface, transparent, 38%);
+        }
+    }
+}
+
+button.icon-tonal {
+    padding: 0;
+    min-height: 2rem;
+    min-width: 2rem;
+    background-color: $secondaryContainer;
+    border-radius: 2rem;
+
+    label {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $onSecondaryContainer;
+    }
+    &:hover {
+        background-color: color.mix($secondaryContainer, $onSurfaceVariant, 88%);
+    }
+    &:active {
+        background-color: color.mix($secondaryContainer, $onSurfaceVariant, 80%);
+    }
+}
+
+button.stack-button {
+    border-radius: 2rem;
+    min-height: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+
+    &:first-child {
+        margin-left: 0.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .icon {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-right: 0.5rem;
+        font-variation-settings: "opsz" 20;
+    }
+
+    &.active {
+        background-color: $secondaryContainer;
+        label {
+            color: $onSecondaryContainer;
+        }
+        .icon {
+            font-variation-settings: "opsz" 20, "FILL" 1;
+        }
+
+        &:hover {
+            background-color: color.mix($secondaryContainer, $onSurfaceVariant, 88%);
+        }
+        &:active {
+            background-color: color.mix($secondaryContainer, $onSurfaceVariant, 80%);
+        }
+    }
+
+    &:not(.active) {
+        background-color: transparent;
+        label {
+            color: $onSurface;
+        }
+
+        &:hover {
+            background-color: color.mix(transparent, $onSurfaceVariant, 92%);
+        }
+        &:active {
+            background-color: color.mix(transparent, $onSurfaceVariant, 90%);
+        }
+    }
+}

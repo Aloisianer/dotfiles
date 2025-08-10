@@ -1,0 +1,42 @@
+@use "colors" as *;
+@use "variables" as *;
+@use "calculated" as *;
+@use "sass:color";
+
+window.popups {
+    background: #22222201;
+    .popup {
+        @include nLayerBackground($background, 1);
+        border-radius: $hyprlandRounding;
+        border: 0.0625rem solid $layerBorderColor;
+        min-width: 15rem;
+        min-height: 1rem;
+        padding: 0.25rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        margin-bottom: 0.5rem;
+        transition: none;
+
+        .icon {
+            margin-right: 0.188rem;
+            color: $onSurface;
+            font-size: 1.063rem;
+            font-variation-settings: "opsz" 20;
+            font-weight: 500;
+        }
+
+        .percent {
+            margin-left: 0.188rem;
+            min-width: 2.5rem;
+            font-size: 1rem;
+            font-weight: 400;
+            color: $onSurfaceVariant;
+        }
+        scale slider {
+            box-shadow: none;
+            @if $layerOpacity == 1 {
+                box-shadow: -0.375rem 0 0 0 $background, 0.375rem 0 0 0 $background;
+            }
+        }
+    }
+}

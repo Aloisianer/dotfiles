@@ -1,0 +1,78 @@
+@use "colors" as *;
+@use "variables" as *;
+@use "calculated" as *;
+@use "sass:color";
+
+window.cliphist {
+    @include nLayerBackground($background, 1);
+    min-width: 29rem;
+    min-height: 35rem;
+    border-radius: $hyprlandRounding;
+    border: 0.0625rem solid $layerBorderColor;
+
+    .cliphist-item {
+        @include elevation(1);
+        @include nLayerBackground($surfaceContainer, 2);
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        outline-offset: -0.0625rem;
+        transition: all 0.25s ease-in;
+
+        padding: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: max(calc($hyprlandRounding - 0.5rem), 0.25rem);
+
+        .label {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $onSurface;
+        }
+
+        &:hover {
+            background-color: color.mix($surfaceContainer, $onSurfaceVariant, 95%);
+        }
+        &:active {
+            background-color: color.mix($surfaceContainer, $onSurfaceVariant, 88%);
+        }
+        &:focus-within {
+            background-color: color.mix($surfaceContainer, $onSurfaceVariant, 88%);
+            outline: none;
+        }
+
+        .preview {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .cliphist-item-revealer {
+        &.is-image .cliphist-item {
+            padding: 0.5rem;
+            .label {
+                color: $primary;
+            }
+        }
+        &.highest .cliphist-item {
+            outline: 0.0625rem solid $primary;
+        }
+    }
+
+    .search {
+        @include elevation(1);
+        @include nLayerBackground($surfaceContainerHigh, 2);
+        margin: 0.5rem;
+        outline: none;
+        border-radius: 2.75rem;
+        color: $onSurface;
+        min-height: 2.75rem;
+
+        placeholder {
+            opacity: 1;
+            color: $onSurfaceVariant;
+        }
+    }
+}

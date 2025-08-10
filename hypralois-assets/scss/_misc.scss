@@ -1,0 +1,306 @@
+@use "colors" as *;
+@use "variables" as *;
+@use "calculated" as *;
+@use "sass:color";
+
+* {
+    transition: all 0.25s ease-in-out;
+    transition-property: background, background-color, color, border-color, outline-color, box-shadow;
+}
+
+window {
+    font-family: "Google Sans Display";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+button,
+box {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+separator {
+    background-color: $outlineVariant;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+tooltip {
+    background-color: $surfaceContainer;
+    border-radius: 0.75rem;
+    outline: none;
+    box-shadow: none;
+    border: 0.0625rem solid $layerBorderColor;
+}
+
+tooltip label {
+    color: $onSurface;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-weight: normal;
+}
+
+.material-icon,
+.material-icon * {
+    font-family: "Material Symbols Rounded", "MaterialSymbolsRounded";
+}
+
+.corner {
+    color: rgba($background, $layerOpacity);
+}
+
+.misc--search {
+    @include elevation(1);
+    @include nLayerBackground($surfaceContainerHigh, 2);
+    margin: 0.5rem;
+    border-radius: 2.75rem;
+    min-height: 2.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .icon {
+        font-size: 1.125rem;
+        font-variation-settings: "opsz" 20;
+        font-weight: 500;
+        color: $onSurface;
+        margin-right: 0.5rem;
+    }
+
+    .entry {
+        color: $onSurface;
+        min-height: 0;
+        padding: 0;
+        outline: none;
+        background-color: transparent;
+        placeholder {
+            opacity: 1;
+            color: $onSurfaceVariant;
+        }
+    }
+}
+
+scale {
+    padding: 0;
+    margin: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    trough {
+        background-color: $secondaryContainer;
+        min-height: 0.675rem;
+        border-radius: 0.675rem;
+    }
+
+    highlight {
+        background-color: $primary;
+        border-radius: 0;
+    }
+
+    slider {
+        min-height: 1.75rem;
+        min-width: 0.375rem;
+        margin: 0;
+        margin-top: -0.875rem;
+        margin-bottom: -0.875rem;
+        border-radius: 0.875rem;
+        background-color: $primary;
+    }
+}
+
+switch {
+    border: 0.125rem solid;
+    min-height: 1.25rem;
+    border-radius: 1.5rem;
+    border-color: $outline;
+    background-color: $surfaceContainerHighest;
+    min-width: 0;
+    min-height: 0;
+    padding: 0.125rem;
+    transition: all 0.25s ease-out;
+    > * {
+        transition: all 0.25s ease-out;
+    }
+
+    slider {
+        border-radius: 50%;
+        background-color: $outline;
+        box-shadow: none;
+        min-width: 1.125rem;
+        min-height: 1.125rem;
+        outline: $surfaceContainerHighest solid 0.1875rem;
+        outline-offset: -0.125rem;
+    }
+
+    &:disabled {
+        background: $surfaceContainerHighest;
+        border-color: $onSurface;
+        slider {
+            background-color: $onSurface;
+        }
+    }
+
+    &:hover {
+        background: color.mix($surfaceContainerHighest, $onSurface, 92%);
+
+        slider {
+            background-color: $onSurfaceVariant;
+            outline-color: color.mix($surfaceContainerHighest, $onSurface, 92%);
+        }
+    }
+
+    &:active {
+        background: color.mix($surfaceContainerHighest, $onSurface, 92%);
+
+        slider {
+            background-color: $onSurfaceVariant;
+            outline-color: color.mix($surfaceContainerHighest, $onSurface, 92%);
+        }
+    }
+
+    &.active:not(.is-changing),
+    &:not(.active).is-changing {
+        background: $primary;
+        border-color: $primary;
+
+        slider {
+            background-color: $onPrimary;
+            outline-color: $primary;
+            outline-offset: 0;
+        }
+
+        &:disabled {
+            background: $onSurface;
+            border-color: $onSurface;
+
+            slider {
+                background-color: $surface;
+                outline-color: $onSurface;
+            }
+        }
+
+        &:hover {
+            background: $primary;
+            border-color: $primary;
+
+            slider {
+                background-color: $primaryContainer;
+                outline-color: $primary;
+            }
+        }
+
+        &:active {
+            background: $primary;
+            border-color: $primary;
+
+            slider {
+                background-color: $primaryContainer;
+                outline-color: $primary;
+            }
+        }
+    }
+}
+
+popover contents {
+    background-color: $surfaceContainer;
+    border: 0.0625rem solid $layerBorderColor;
+    border-radius: 0.25rem;
+    min-height: 0;
+    min-width: 4rem;
+    padding: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    modelbutton,
+    row {
+        border-radius: 0;
+        min-height: 2.5rem;
+        padding: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 0;
+
+        &:hover {
+            background: color.mix($surfaceContainer, $onSurface, 90%);
+        }
+        &:active {
+            background: color.mix($surfaceContainer, $onSurface, 82%);
+        }
+    }
+
+    label {
+        color: $onSurface;
+    }
+}
+
+scrollbar {
+    background: transparent;
+    color: rgb($primary, 0.5);
+    border-radius: 0.25rem;
+
+    .vertical {
+        margin-right: -0.25rem;
+        margin-left: 0.25rem;
+    }
+
+    .horizontal {
+        margin-bottom: -0.25rem;
+        margin-top: 0.25rem;
+    }
+
+    &:hover {
+        color: rgb($primary, 0.5);
+        slider {
+            background-color: rgba($primary, 0.5);
+        }
+    }
+
+    &:active {
+        color: rgb($primary, 0.7);
+        slider {
+            background-color: rgba($primary, 1);
+        }
+    }
+
+    slider {
+        background-color: rgba($primary, 0.25);
+        border-radius: 1rem;
+        min-width: 0.25rem;
+        min-height: 0.25rem;
+
+        &:hover {
+            background-color: rgba($primary, 0.5);
+        }
+
+        &:active {
+            background-color: rgba($primary, 1);
+        }
+    }
+}
+
+window.misc--dialog {
+    @include nLayerBackground($surfaceContainer, 1);
+    padding: 1.25rem;
+
+    .title {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: $onSurface;
+        margin-bottom: 0.25rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        font-weight: 300;
+        color: $onSurfaceVariant;
+        margin-bottom: 0.5rem;
+    }
+
+    .actions-box {
+        button:first-child {
+            margin-right: 0.5rem;
+        }
+    }
+}
