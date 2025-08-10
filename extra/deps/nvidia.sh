@@ -1,3 +1,4 @@
+~/.dotfiles/extra/deps/hyprland.sh
 paru -Syu \
 nvidia-open-dkms \
 nvidia-utils \

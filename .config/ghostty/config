@@ -1,0 +1,23 @@
+background = 000000
+
+window-padding-x = 0
+window-padding-y = 0
+
+resize-overlay = never
+gtk-titlebar = false
+gtk-adwaita = false
+bold-is-bright = true
+confirm-close-surface = false
+window-colorspace = srgb
+window-vsync = true
+title = "Ghostty"
+window-decoration = true
+command = cava
+
+font-size = 7
+font-family = "JetBrainsMono NFM ExtraBold"
+font-family-bold = "JetBrainsMono NFM ExtraBold"
+font-family-italic = "JetBrainsMono NFM ExtraBold Italic"
+font-family-bold-italic = "JetBrainsMono NFM ExtraBold Italic"
+
+custom-shader = cava.glsl

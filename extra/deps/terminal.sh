@@ -1,5 +1,6 @@
 paru -Syu \
 starship \
+nushell \
 zsh \
 bat \
 eza \

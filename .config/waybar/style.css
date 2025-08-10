@@ -1,0 +1,54 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 0px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+#battery, #cpu, #memory, #clock, #bluetooth, #pulseaudio, #tray, #workspaces, #custom-music {
+  border-radius: 13px;
+  background-clip: padding-box;
+  padding: 3px 15px 0px 15px;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+window > box {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+#workspaces button {
+  background-color: rgba(0, 0, 0, 0)
+}
+
+#tray {
+  color: rgb(255, 255, 255);
+}
+#memory {
+  color: rgb(255, 255, 255);
+}
+#cpu {
+  color: rgb(255, 255, 255);
+}
+#clock {
+  color: rgb(255, 255, 255);
+}
+#pulseaudio {
+  color: rgb(255, 255, 255);
+}
+#battery.charging, #battery.full, #battery.discharging {
+  color: rgb(255, 255, 255);
+}
+#battery.critical:not(.charging) {
+  color: rgb(242, 143, 173);
+}
+#custom-music {
+  animation: gradient 15s ease infinite;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}

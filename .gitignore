@@ -1,6 +1,6 @@
-/dots/.config/btop/btop.log
-/dots/.config/hypr/custom/*
-!/dots/.config/hypr/custom/amd.conf
-!/dots/.config/hypr/custom/nvidia.conf
-!/dots/.config/hypr/custom/proton.conf
-!/dots/.config/hypr/custom/unreal-engine.conf
+.config/btop/btop.log
+.config/hypr/custom/*
+!.config/hypr/custom/amd.conf
+!.config/hypr/custom/nvidia.conf
+!.config/hypr/custom/proton.conf
+!.config/hypr/custom/unreal-engine.conf
