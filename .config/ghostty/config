@@ -1,7 +1,5 @@
-background = 000000
-
-window-padding-x = 0
-window-padding-y = 0
+window-padding-x = 10
+window-padding-y = 10
 
 resize-overlay = never
 gtk-titlebar = false
@@ -12,12 +10,10 @@ window-colorspace = srgb
 window-vsync = true
 title = "Ghostty"
 window-decoration = true
-command = cava
+theme = catppuccin-mocha
 
-font-size = 7
+font-size = 13
 font-family = "JetBrainsMono NFM ExtraBold"
 font-family-bold = "JetBrainsMono NFM ExtraBold"
 font-family-italic = "JetBrainsMono NFM ExtraBold Italic"
 font-family-bold-italic = "JetBrainsMono NFM ExtraBold Italic"
-
-custom-shader = cava.glsl
